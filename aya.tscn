@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dafp7e7bho1b8"]
+
+[ext_resource type="Texture2D" uid="uid://oohjr3q0bceu" path="res://RAAAH SA80.png" id="1_2myqq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rg76t"]
+size = Vector2(44.5, 87)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.625128, 0.497452)
+shape = SubResource("RectangleShape2D_rg76t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.437565, 0.803944)
+scale = Vector2(0.0490439, 0.0649428)
+texture = ExtResource("1_2myqq")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(24, 0)

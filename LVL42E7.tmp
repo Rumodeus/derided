@@ -1,0 +1,108 @@
+[gd_scene load_steps=13 format=3 uid="uid://dpw0o1la63fua"]
+
+[ext_resource type="Texture2D" uid="uid://c8oj0ph5plncs" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0009_2.png" id="1_5tqcr"]
+[ext_resource type="PackedScene" uid="uid://dafp7e7bho1b8" path="res://aya.tscn" id="1_37mq1"]
+[ext_resource type="Texture2D" uid="uid://b1jox4p2o4hba" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0010_1.png" id="2_yk1rb"]
+[ext_resource type="Texture2D" uid="uid://b5702jotuls17" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0003_6.png" id="3_2b5gi"]
+[ext_resource type="Texture2D" uid="uid://g4a5c3eumq3d" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0001_8.png" id="3_5iy5x"]
+[ext_resource type="Texture2D" uid="uid://bt16bn6e8k6k1" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0000_9.png" id="3_5ro0t"]
+[ext_resource type="Texture2D" uid="uid://dcklin0yijpa8" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0005_5.png" id="3_j207v"]
+[ext_resource type="Texture2D" uid="uid://ct2rip23c850j" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0006_4.png" id="3_yirpo"]
+[ext_resource type="Texture2D" uid="uid://ccwbfydpmy17n" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0007_Lights.png" id="5_0tc2o"]
+[ext_resource type="Texture2D" uid="uid://jughgqlm6tyj" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0002_7.png" id="5_vvnvm"]
+[ext_resource type="Script" path="res://Scripts/Aya.gd" id="8_i5nqt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_njxsy"]
+size = Vector2(1889.5, 67)
+
+[node name="LVL1" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(-146, -358)
+texture = ExtResource("1_5tqcr")
+
+[node name="Sprite2D" type="Sprite2D" parent="BG"]
+position = Vector2(927, 0)
+texture = ExtResource("1_5tqcr")
+
+[node name="Sprite2D2" type="Sprite2D" parent="BG"]
+position = Vector2(209, -724)
+scale = Vector2(1.61099, 1.61099)
+texture = ExtResource("2_yk1rb")
+
+[node name="BG BG Trees" type="Sprite2D" parent="."]
+position = Vector2(-91, -343)
+texture = ExtResource("3_yirpo")
+
+[node name="Sprite2D" type="Sprite2D" parent="BG BG Trees"]
+position = Vector2(619, 7)
+texture = ExtResource("3_yirpo")
+
+[node name="BG Trees" type="Sprite2D" parent="."]
+position = Vector2(-250, -343)
+texture = ExtResource("3_j207v")
+
+[node name="Sprite2D" type="Sprite2D" parent="BG Trees"]
+position = Vector2(727, 1)
+texture = ExtResource("3_j207v")
+
+[node name="Light Rays" type="Sprite2D" parent="."]
+position = Vector2(-45, -323)
+texture = ExtResource("5_0tc2o")
+
+[node name="Sprite2D" type="Sprite2D" parent="Light Rays"]
+position = Vector2(588, -9)
+texture = ExtResource("5_0tc2o")
+
+[node name="Trees" type="Sprite2D" parent="."]
+position = Vector2(-215, -343)
+texture = ExtResource("3_2b5gi")
+
+[node name="Trees2" type="Sprite2D" parent="Trees"]
+position = Vector2(877, -2)
+texture = ExtResource("3_2b5gi")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_37mq1")]
+position = Vector2(3, -166)
+script = ExtResource("8_i5nqt")
+
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(-27, -15)
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor"]
+position = Vector2(-370, -196)
+scale = Vector2(0.604728, 0.599937)
+texture = ExtResource("3_5iy5x")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Floor"]
+position = Vector2(191, -196)
+scale = Vector2(0.604728, 0.599937)
+texture = ExtResource("3_5iy5x")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Floor"]
+position = Vector2(752, -196)
+scale = Vector2(0.604728, 0.599937)
+texture = ExtResource("3_5iy5x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+position = Vector2(-55, 37)
+shape = SubResource("RectangleShape2D_njxsy")
+
+[node name="Floor2" type="Sprite2D" parent="."]
+position = Vector2(-168, -350)
+texture = ExtResource("3_5ro0t")
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor2"]
+position = Vector2(928, -1)
+texture = ExtResource("3_5ro0t")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(14, -321)
+
+[node name="Leaves" type="Sprite2D" parent="."]
+position = Vector2(-165, -333)
+texture = ExtResource("5_vvnvm")
+
+[node name="Leaves2" type="Sprite2D" parent="Leaves"]
+position = Vector2(919, -5)
+texture = ExtResource("5_vvnvm")

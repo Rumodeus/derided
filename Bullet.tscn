@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2yfl554q6p0f"]
+
+[ext_resource type="Texture2D" uid="uid://3cnlidjfyqgx" path="res://pixil-frame-0.png" id="1_x2q81"]
+[ext_resource type="Script" path="res://Scripts/Bullet.gd" id="2_bp5n6"]
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(1, 2)
+texture = ExtResource("1_x2q81")
+script = ExtResource("2_bp5n6")
