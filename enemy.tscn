@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://c8bvfvxa3ltyj"]
+
+[ext_resource type="Script" path="res://Scripts/nemy.gd" id="1_7x5of"]
+[ext_resource type="Texture2D" uid="uid://sovt0eu6d5fa" path="res://enemy sprit/0-removebg-preview.png" id="1_oetfj"]
+[ext_resource type="Texture2D" uid="uid://bwoc4a32tlfbv" path="res://enemy sprit/1-removebg-preview.png" id="2_3m72a"]
+[ext_resource type="Texture2D" uid="uid://ds7orqun3j881" path="res://enemy sprit/2-removebg-preview.png" id="3_6k33c"]
+[ext_resource type="Texture2D" uid="uid://gl87jb4j21qj" path="res://enemy sprit/3-removebg-preview.png" id="4_5655f"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qhcsb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_oetfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3m72a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6k33c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5655f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_7x5of")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qhcsb")
+frame_progress = 0.590038
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-156.667, -226.667, -20, -223.333, 43.3333, -183.333, 63.3333, -116.667, 66.6667, -86.6667, 90, -76.6667, 116.667, -40, 136.667, 16.6667, 133.333, 86.6667, 103.333, 143.333, 40, 186.667, -46.6667, 186.667, -80, 153.333, -93.3333, 130, -163.333, 126.667, -173.333, 103.333, -173.333, -210)

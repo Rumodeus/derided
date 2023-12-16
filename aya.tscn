@@ -18,3 +18,7 @@ texture = ExtResource("1_2myqq")
 
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(24, 0)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true

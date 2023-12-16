@@ -1,5 +1,4 @@
 extends CharacterBody2D
-
 @onready var bullet = preload("res://Bullet.tscn")
 const GRAVITY = 500.0
 const WALK_SPEED = 150
@@ -32,15 +31,20 @@ func _physics_process(delta):
 		velocity.y = -jump_height
 	
 	velocity.y += delta * GRAVITY
-	shoot($Sprite2D.flip_h)
+	if Input.is_action_just_pressed("shoot") && $Timer.is_stopped():
+		shoot($Sprite2D.flip_h)
+		flash()
 	move_and_slide()
-
+func flash():
+	$"/root/LVL1/ColorRect2".visible = true
+	await get_tree().create_timer(0.1).timeout
+	$"/root/LVL1/ColorRect2".visible = false
 func shoot(dir):
-	if Input.is_action_just_pressed("shoot"):
-		var b = bullet.instantiate()
-		b.init(dir)
-		get_parent().add_child(b)
-		b.global_position= $Marker2D.global_position
+	var b = bullet.instantiate()
+	b.init(dir)
+	get_parent().add_child(b)
+	b.global_position= $Marker2D.global_position
+	$Timer.start()
 func _ready():
 	pass
 

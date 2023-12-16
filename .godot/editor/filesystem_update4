@@ -1,6 +1,6 @@
-res://LVL1.tscn
-res://Scripts/Aya.gd
 res://aya.tscn
-res://Bullet.tscn
-res://Scripts/Bullet.gd
 res://Scripts/vignete.gdshader
+res://Scripts/Aya.gd
+res://LVL1.tscn
+res://enemy.tscn
+res://Scripts/nemy.gd

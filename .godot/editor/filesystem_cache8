@@ -1,14 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1702664345
+::res://::1702682512
 200px-MARENOL.png::CompressedTexture2D::9155048472692534124::1700855857::1702660350::1::::<><>::
-aya.tscn::PackedScene::7170552099728567723::1702664104::0::1::::<><>::uid://d3o1kti0b5slo::::res://200px-MARENOL.png
-Bullet.tscn::PackedScene::9104230747485280427::1702664104::0::1::::<><>::uid://3cnlidjfyqgx::::res://pixil-frame-0.png<>res://Scripts/Bullet.gd
+aya.tscn::PackedScene::7170552099728567723::1702680478::0::1::::<><>::uid://oohjr3q0bceu::::res://RAAAH SA80.png
+Bullet.tscn::PackedScene::9104230747485280427::1702669216::0::1::::<><>::uid://3cnlidjfyqgx::::res://pixil-frame-0.png<>res://Scripts/Bullet.gd
 download (1).png::CompressedTexture2D::2926164641068578188::1694021176::1702664212::1::::<><>::
 icon.svg::CompressedTexture2D::2219439002266106008::1702580743::1702580814::1::::<><>::
 image-removebg-preview.png::CompressedTexture2D::8387471529557413633::1683552919::1702582257::1::::<><>::
-LVL1.tscn::PackedScene::8259055324815419852::1702664103::0::1::::<><>::uid://c8oj0ph5plncs::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0009_2.png<>uid://dafp7e7bho1b8::::res://aya.tscn<>uid://b1jox4p2o4hba::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0010_1.png<>uid://b5702jotuls17::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0003_6.png<>uid://g4a5c3eumq3d::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0001_8.png<>uid://bt16bn6e8k6k1::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0000_9.png<>uid://dcklin0yijpa8::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0005_5.png<>uid://ct2rip23c850j::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0006_4.png<>uid://ccwbfydpmy17n::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0007_Lights.png<>uid://jughgqlm6tyj::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0002_7.png<>res://Scripts/Aya.gd<>res://Scripts/vignete.gdshader
+LVL1.tscn::PackedScene::8259055324815419852::1702680478::0::1::::<><>::uid://c8oj0ph5plncs::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0009_2.png<>uid://dafp7e7bho1b8::::res://aya.tscn<>uid://b1jox4p2o4hba::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0010_1.png<>uid://b5702jotuls17::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0003_6.png<>uid://g4a5c3eumq3d::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0001_8.png<>uid://bt16bn6e8k6k1::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0000_9.png<>uid://dcklin0yijpa8::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0005_5.png<>uid://ct2rip23c850j::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0006_4.png<>uid://ccwbfydpmy17n::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0007_Lights.png<>uid://jughgqlm6tyj::::res://Free Pixel Art Forest/PNG/Background layers/Layer_0002_7.png<>res://Scripts/Aya.gd<>res://Scripts/vignete.gdshader
 pixil-frame-0.png::CompressedTexture2D::1970225767249721107::1702593713::1702593773::1::::<><>::
 RAAAH SA80.png::CompressedTexture2D::1011987127495692604::1688242800::1702664347::1::::<><>::
+::res://enemy sprit/::1702682520
+0-removebg-preview.png::CompressedTexture2D::1293610781186967466::1702682520::1702682521::1::::<><>::
+1-removebg-preview.png::CompressedTexture2D::3959649798802533939::1702682520::1702682521::1::::<><>::
+2-removebg-preview.png::CompressedTexture2D::8489602592987074216::1702682520::1702682521::1::::<><>::
+3-removebg-preview.png::CompressedTexture2D::445902498874803673::1702682520::1702682521::1::::<><>::
 ::res://Free Pixel Art Forest/::1702584339
 changelog.txt::TextFile::-1::1634584120::0::1::::<><>::
 Contact.txt::TextFile::-1::1630711290::0::1::::<><>::
@@ -36,7 +41,7 @@ Pixel Art Forest.png::CompressedTexture2D::7329829472612082986::1588025993::1702
 Pixel Art Plataformer Painted Style.png::CompressedTexture2D::6405285452122362907::1588026597::1702584342::1::::<><>::
 Pixel Art Runner.png::CompressedTexture2D::4808440170939939140::1588025819::1702584342::1::::<><>::
 Pixel Art Snowy Forest.png::CompressedTexture2D::556641594325289641::1588026265::1702584342::1::::<><>::
-::res://Scripts/::1702664104
-Aya.gd::GDScript::-1::1702663985::0::1::::<>CharacterBody2D<>::
-Bullet.gd::GDScript::-1::1702664103::0::1::::<>Sprite2D<>::
-vignete.gdshader::Shader::-1::1702664104::0::1::::<><>::
+::res://Scripts/::1702682503
+Aya.gd::GDScript::-1::1702680478::0::1::::<>CharacterBody2D<>::
+Bullet.gd::GDScript::-1::1702664814::0::1::::<>Sprite2D<>::
+vignete.gdshader::Shader::-1::1702680478::0::1::::<><>::
